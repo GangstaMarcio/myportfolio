@@ -103,14 +103,13 @@ img {
     width: 100%;
     object-fit: cover;
 }
-
 /*===================== MEDIA QUERY (Medium DEVICES) ============= */
 @media screen and (max-width: 1024px) {
     .container {
         width: var(--container-width-md);
     }
     section {
-        margin-top: 6rem;
+        margin-top: 4rem;
     }
 }
 /*==================== MEDIA QUERY (SMALL DEVICES) ================== */
@@ -120,5 +119,6 @@ img {
     }
     section > h2 {
         margin-bottom : 2rem;
+        width: 40%;
     }
 }
