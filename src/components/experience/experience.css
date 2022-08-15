@@ -9,11 +9,26 @@
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    box-shadow:   2px 2px 5px var(--color-black), 
+                inset -2px -2px 5px transparent;
 }
 .experience__container > div h3 {
     text-align: center;
     margin-bottom: 2rem;
     color: var(--color-white);
+}
+.experience__container > div:nth-child(6){
+    padding: 7rem 0rem;
+    text-align: center;
+}
+.experience__container > div span {
+    font-size: 25pt;
+    font-weight: bold;
+    padding: .8rem 11.1rem;
+    color: var(--color-primary);
+    background: var(--color-white);
+    box-shadow: inset 2px 2px 5px var(--color-black), 
+                inset -2px -2px 5px var(--color-black);
 }
 .experience__content {
     display: grid;
@@ -26,8 +41,13 @@
 }
 .experience__details-icon {
     margin-top: 6px;
+    font-size: 40pt;
     color: var(--color-white);
 }
+.experience__details small {
+    color: var(--color-bg);
+}
+
 /*======== MEDIA QUERIES (MEDIUM DEVICES)=======*/
 @media screen and (max-width: 1024px) {
     .experience__container {
@@ -51,5 +71,14 @@
         width: 100%;
         padding: 2rem 1rem;
     }
-    
+    .experience__container > div:nth-child(6){
+        padding: 6rem 0;
+    }
+    .experience__container > div span {
+        font-size: 18pt;
+        padding: 1rem 7.3rem;
+    }
+    .experience__details-icon {
+        font-size: 25pt;
+    }
 }

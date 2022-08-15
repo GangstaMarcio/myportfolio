@@ -6,6 +6,6 @@ const Toggle = () => {
         <i className='indicador'></i>
     </div>
   )
-}
+} 
 
 export default Toggle

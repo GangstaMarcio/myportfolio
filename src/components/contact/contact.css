@@ -16,6 +16,8 @@
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
+    box-shadow: inset 2px 2px 5px var(--color-bg),
+                inset -2px -2px 5px var(--color-bg);
 }
 .contact__option-icon {
     font-size: 1.5rem;
@@ -26,6 +28,9 @@
     display: inline-block;
     font-size: 0.8rem;
     color: var(--color-white);
+}
+.contact__option a:hover{
+    color: var(--color-bg);
 }
 
 /*=========== FORM ===========*/
@@ -54,5 +59,9 @@ input, textarea {
 @media screen and (max-width: 600px ) {
     .container.contact__container {
         width: var(--container-width-sm);
+    }
+    form button {
+        display: block;
+        margin: 0 auto;
     }
 }

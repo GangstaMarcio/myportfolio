@@ -10,13 +10,14 @@ header{
     position: relative; 
 }
 .top__container {
+    position: absolute;
     width: 100%;
     height: auto;
 }
 /*========TOGGLE=======*/
 #toggle__container {
     position: relative;
-    display: block; 
+    float: left;
     width: 50px;
     height: 25px;
     cursor: pointer;
@@ -35,6 +36,25 @@ header{
     transform: scale(0.9);
     transition: 00.5s;
 }
+/*=======Language======*/
+.language__container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    width: 150px;
+    height: 27px;
+    cursor: pointer;
+    border-radius: 50px;
+    background: var(--color-primary);
+    transition: 0.5s;
+}
+.language__container select {
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-size: 17px;
+}
+
 /*========= CTA =======*/
 .cta {
     margin-top: 2.5rem;
@@ -99,10 +119,18 @@ header{
     }
     #toggle__container {
         width: 40px;
-        height: 20px;
+        height: 17px;
     }
     #toggle__container .indicador {
-        width: 20px;
+        width: 17px;
+        height: 17px;
+    }
+    .language__container {
+        width: 100px;
         height: 20px;
+        display: flex;
+    }
+    .language__container select {
+        font-size: 13px;
     }
 }
