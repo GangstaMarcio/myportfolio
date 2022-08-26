@@ -52,9 +52,23 @@
     font-size: 0.7rem;
     color: var(--color-light);
 }
-.about__content p {
+.about__content article p {
     margin: 2rem 0 2.6rem;
     color: var(--color-primary);
+}
+.about__container article {
+    width: 100%;
+    height: auto;
+}
+.about__content article p.show{
+    display: none;
+}
+.about__content article p.noShow{
+    display: block;
+}
+.about__content article button {
+    float: right;
+    border: transparent;
 }
 /*============ MEDIA QUERIES (MEDIUM DEVICES) ========= */
 @media  screen and (max-width: 1024px) {
